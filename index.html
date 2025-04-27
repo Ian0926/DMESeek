@@ -56,15 +56,15 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Wencheng Han</a>,</span>
+                <a href="https://wencheng256.github.io/" target="_blank">Wencheng Han</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Huan Zheng</a>,</span>
+                  <a href="https://scholar.google.com/citations?user=XnV4edcAAAAJ&hl=zh-CN&oi=sra" target="_blank">Huan Zheng</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Dongqian Guo</a>,</span>
+                  <a href="https://scholar.google.com/citations?user=fC226aMAAAAJ&hl=zh-CN" target="_blank">Dongqian Guo</a>,</span>
               <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Cheng-Zhong Xu</a>,</span>
+                  <a href="https://www.fst.um.edu.mo/personal/czxu/" target="_blank">Cheng-Zhong Xu</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jianbing Shen</a><sup>*</sup>
+                    <a href="https://scholar.google.com/citations?user=_Q3NTToAAAAJ&hl=en" target="_blank">Jianbing Shen</a><sup>*</sup>
                   </span>
                   </div>
 
@@ -87,7 +87,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -95,7 +95,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -129,15 +129,15 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/video1.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        The left panel presents the visualization analysis derived from multi-view imagery. In contrast, the middle panel displays the corresponding visualization results rendered in the BEV perspective. The rightmost panel showcases the output results rom the Decision Maker. The orange curves depict the predicted trajectories of the proposed DME-Seek system over the next 3 seconds.
       </h2>
     </div>
   </div>
@@ -148,11 +148,11 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-nine-tenths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Planning-oriented self-driving systems perform well in environmental perception and accurate control signal regression. However, they still struggle with handling corner cases and lack interpretability. On the other hand, large language models (LLMs) offer robust generalization capabilities that enhance reasoning and transparency in complex scenarios, but they are limited in generating precise control commands and ensuring efficiency. To address these challenges, this paper presents DME-Seek, a unified framework that combines the strengths of LLM-based and planning-oriented driving systems. The framework consists of two main components: the Decision Maker, which leverages the reasoning abilities of LLM to analyze critical elements in the driving scene and generate reliable high-level driving decisions; and the Executor, which uses accurate environmental perception to translate these decisions into precise control signals. In our implementation, we introduce deep reasoning into the Decision Maker, decomposing complex driving decisions into simpler reasoning steps. Using chain-of-thought (CoT) prompting, the system formulates safe and coherent driving strategies. The planning-oriented Executor then integrates these high-level instructions with environmental perception to ensure accurate control. To further enhance reliability, we introduce a trajectory validation mechanism that Decision Maker continuously verifies the Executor's outputs, ensuring robustness and correctness. To optimize both performance and efficiency, the Decision Maker and Executor are designed to operate asynchronously. This allows the system to approach the efficiency of the high-frequency Executor while maintaining the reliability of the Decision Maker. To train and evaluate DME-Seek effectively, we introduce a new benchmark—the Human Driver Behavior and Decision-Making with Chain-of-Thought (HBD++) Dataset. This dataset captures rich and accurate chains of reasoning behind human driving decisions, providing valuable insights into real-world driving behavior. Experiments on both the nuScenes and HBD++ datasets demonstrate that DME-Seek achieves state-of-the-art performance, significantly improving decision accuracy and driving safety.
           </p>
         </div>
       </div>
@@ -166,96 +166,155 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3 has-text-centered">Method</h2>
+      <div class="columns is-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="image-container">
+            <!-- 第一张图片 -->
+            <figure class="image">
+              <img src="static/images/motivation.png" alt="项目动机"/>
+              <h2 class="subtitle has-text-centered">
+              </h2>
+            </figure>
+            
+            <!-- 第二张图片 -->
+            <figure class="image">
+              <img src="static/images/framework.png" alt="框架结构"/>
+              <h2 class="subtitle has-text-centered">
+              </h2>
+            </figure>
+            
+            <!-- 第三张图片 -->
+            <figure class="image">
+              <img src="static/images/CoT.png" alt="思维链"/>
+              <h2 class="subtitle has-text-centered">
+              </h2>
+            </figure>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- End image section -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Results</h2>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="image-container">
+            <!-- 第一张图片 -->
+            <figure class="image">
+              <img src="static/images/table6.PNG" alt="项目动机"/>
+              <h2 class="subtitle has-text-centered">
+              </h2>
+            </figure>
+            
+            <!-- 第三张和第四张图片横向排列 -->
+            <div class="columns">
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/table2.PNG" alt="表格2"/>
+                  <h2 class="subtitle has-text-centered">
+                  </h2>
+                </figure>
+              </div>
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/table3.PNG" alt="表格3"/>
+                  <h2 class="subtitle has-text-centered">
+                  </h2>
+                </figure>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/table4.PNG" alt="表格4"/>
+                  <h2 class="subtitle has-text-centered">
+                  </h2>
+                </figure>
+              </div>
+              <div class="column is-half">
+                <figure class="image">
+                  <img src="static/images/table5.PNG" alt="表格5"/>
+                  <h2 class="subtitle has-text-centered">
+                  </h2>
+                </figure>
+              </div>
+            </div>
+            
+            <!-- 移动到最后的图片 -->
+            <figure class="image">
+              <img src="static/images/vis.png" alt="可视化结果"/>
+              <h2 class="subtitle has-text-centered">
+              </h2>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <!-- <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            <!-- <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <!-- <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -264,7 +323,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -274,15 +333,25 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
+    <div class="container is-max-widescreen content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <div class="bibtex-container">
+        <button class="copy-button" onclick="copyBibTeX()">
+          <i class="fas fa-copy"></i> Copy
+        </button>
+        <pre><code id="bibtex-content">@article{han2025dmeseek,
+      title={DME-Seek: Unifying Deep Reasoning Driving Logic and Planning Oriented Perception for Self-Driving Cars},
+      author={Han, Wencheng and Zheng, Huan and Guo, Dongqian and Xu, Cheng-Zhong and Shen, Jianbing},
+      journal={arXiv preprint},
+      year={2025}
+}</code></pre>
+      </div>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -295,7 +364,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
@@ -305,6 +374,21 @@
     </div>
   </div>
 </footer>
+
+<!-- 添加复制BibTeX的JavaScript函数 -->
+<script>
+  function copyBibTeX() {
+    const bibtexContent = document.getElementById('bibtex-content').textContent;
+    navigator.clipboard.writeText(bibtexContent).then(function() {
+      const copyButton = document.querySelector('.copy-button');
+      const originalText = copyButton.innerHTML;
+      copyButton.innerHTML = '<i class="fas fa-check"></i> Copied';
+      setTimeout(function() {
+        copyButton.innerHTML = originalText;
+      }, 2000);
+    });
+  }
+</script>
 
 <!-- Statcounter tracking code -->
   
