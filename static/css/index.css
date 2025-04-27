@@ -19,8 +19,8 @@ body {
 
 
 .teaser .hero-body {
-  padding-top: 0;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .teaser {
@@ -131,6 +131,67 @@ body {
 
 .eql-cntrb { 
   font-size: smaller;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.image-container figure {
+  margin-bottom: 0.5rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.bibtex-container {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+
+.copy-button:hover {
+  background-color: #363636;
+}
+
+pre {
+  position: relative;  /* 确保pre元素是相对定位的 */
+}
+
+/* 调整 BibTeX 容器的宽度 */
+#BibTeX .container {
+  max-width: 50%;  /* 从90%减小到80% */
+}
+
+.bibtex-container pre {
+  width: 100%;
+  overflow-x: auto;  /* 确保内容过长时可以滚动 */
+}
+
+/* 放大视频展示窗口 */
+.teaser video {
+  width: 100%;
+  max-height: 80vh;  /* 视口高度的80% */
+  object-fit: contain;
 }
 
 
